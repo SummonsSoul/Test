@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box1 {
+            width: 800px;
+            height: 400px;
+            background-color: lightgray;
+            position: relative;
+        }
+        .normal {
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            margin: 10px;
+        }
+        .relative {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            position: relative;
+            top: -50px; /* 相对于正常位置向上移动50px */
+            left: 50px; /* 相对于正常位置向右移动50px */
+        }
+        .absolute {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            position: absolute;
+            top: 50px; /* 相对于最近的定位祖先元素向下移动50px */
+            left: 50px; /* 相对于最近的定位祖先元素向右移动50px */
+            /* 脱离文本流*/
+        }
+        .box_fixed {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            position: fixed;
+            top: 500px; /* 相对于浏览器窗口向下移动500px */
+            left: 500px; /* 相对于浏览器窗口向右移动500px */
+            /* 脱离文本流*/
+        }
+    </style>
+</head>
+<body>
+    <h1>相对定位</h1>
+    <div class="box1">
+        <div class="normal"></div>
+        <div class="relative"></div>
+        <div class="normal"></div>
+    </div>
+    <br>
+    <h1>绝对定位</h1>
+    <div class="box1">
+        <div class="normal"></div>
+        <div class="absolute"></div>
+        <div class="normal"></div>
+    </div>
+    <h1>固定定位</h1>
+        <div class="box1">
+            <div class="box_fixed">
+                <p>关注塔菲喵 关注塔菲谢谢喵<br>
+                    关注塔菲喵 关注塔菲谢谢喵<br>
+</p>
+            </div>
+        </div>
+</body>
+</html>

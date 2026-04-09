@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* id选择器 */
+        #U114 {
+            color: red;
+            font-size: 20px;
+        }
+        /* 类选择器 */
+        .U514 {
+            color: blue;
+            font-size: 16px;
+        }
+       
+        .father>.son {
+            color: green;
+        }
+        /* 子元素选择器 */
+        .mother p {
+            color: yellow;
+        }
+        /* 后代选择器 */
+        h3 + p {
+            color: purple;
+        }
+        /* 并集选择器 */
+        #wei:hover {
+            background-color: orange;
+        }
+    </style>
+        
+</head>
+<body>
+    <p id="U114">况复风云不感，羁旅无归。</p>
+    <p class="U514">未能采葛，还成食薇。</p>
+    <p id="U114">沉沦穷巷，芜没荆扉，既伤摇落，弥嗟变衰。</p>
+    <p class="U514" >《淮南子》云：“木叶落，长年悲。”</p>
+     <!-- 纯数字违法 -->
+     <div class="father">
+        <p class="son">斯之谓矣。</p>
+        <div>
+            <p class="grandson">我子代的子代不是我的子代</p>
+        </div>
+     </div>
+    <br>
+     <div class="mother">
+        <p class="boy">乃歌曰：“建章三月火，黄河万里槎。</p>
+        <div>
+            <p class="girl">若非金谷满园树，即是河阳一县花。”</p>
+        </div>
+     </div>
+     <hr>
+     <p>”桓大司马闻而叹曰：</p>
+     <h3>“昔年种柳，依依汉南。</h3>
+     <p>今看摇落，凄怆江潭。</p>
+     <br>
+     <p id="wei">树犹如此，人何以堪！”</p>
+
+</body>
+</html>

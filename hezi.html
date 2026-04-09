@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hezimoxing</title>
+    <style>
+        #nither_dome {
+            background-color: slateblue;
+            width: 200px;
+            height: 100px;
+            border-style: solid dashed dotted double;
+            border-width: 40px 30px 60px 60px;
+            /* 边框排序上右下左 */
+           border-color: seagreen red blue orange;
+            /* 边框颜色排序上右下左 */
+             margin: 30px;
+        }
+        .dome{
+            display: inline-block;
+            width: 200px;
+            height: 100px;
+            background-color: red;
+            padding: 20px;
+            border: 20px solid blue;
+            margin: 30px;
+        }
+    </style>
+</head>
+<body>
+    <p>盒子模型</p>
+    <p>元素在页面上占据的空间可以看成一个矩形，这个矩形就是元素的盒子。元素的盒子由四个部分组成：内容(content)、内边距(padding)、边框(border)和外边距(margin)。</p>
+    <p>内容(content)：元素的实际内容区域，包含文本、图片等。</p>
+    <p>内边距(padding)：内容与边框之间的空间，可以用来增加元素内部的空白。</p>
+    <p>边框(border)：包围内容和内边距的线条，可以设置宽度、样式和颜色。</p>
+    <p>外边距(margin)：元素与其他元素之间的空间，可以用来控制元素之间的距离。</p>
+    <p>盒子模型有两种类型：标准盒模型和IE盒模型。在标准盒模型中，元素的宽度和高度只包括内容区域，而在IE盒模型中，元素的宽度和高度包括内容、内边距和边框。</p>
+    <p>通过CSS属性可以控制盒子模型的各个部分，例如：</p>
+    <ul>
+        <li>width和height属性控制内容区域的宽度和高度。</li>
+        <li>padding属性控制内边距的大小。</li>
+        <li>border属性控制边框的宽度、样式和颜色。</li>
+        <li>margin属性控制外边距的大小。</li>
+    </ul>
+<div class="dome">
+    何故深思高举，自令放为？”
+
+</div>
+<div id="nither_dome">
+    何故深思高举，自令放为？”
+
+</div>
+    <!-- 内部样式导入 -->
+</body>
+</html>

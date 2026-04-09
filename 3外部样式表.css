@@ -1,0 +1,11 @@
+/* 直接写选择器,与文件link链接 */
+span {
+    width: 20px;
+    color: blue;
+}
+h1 {
+    color: red;
+}
+p {
+    color: green;
+}
